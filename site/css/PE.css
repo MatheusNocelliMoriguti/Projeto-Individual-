@@ -6,7 +6,7 @@
     width: 100%;
     justify-content: center;
     align-items: center;
-    margin-top: 35px;
+    margin-top: 20px;
     
 
 }
@@ -24,7 +24,7 @@ body {
 
 .container {
     display: flex;
-    height: 62vh;
+    height: 65vh;
     width: 70%;
     border: solid red;
     border-radius: 12px;
@@ -33,15 +33,40 @@ body {
 
 }
 
-.div_1,
+/* .div_1,
 .div_2,
 .div_3 {
-    border: solid blue;
-    height: 100%;
+    
+     height: 100%;
     width: 33.3%;
     display: flex;
+    flex-direction: column; 
+    border: solid red;
+} */
+
+
+
+.div_1{
+    height: 100%;
+    display: flex;
     flex-direction: column;
+    width: 28%;
 }
+.div_2{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+.div_3{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 32%;
+}
+
+
+
 
 body span {
     color: white;
@@ -67,10 +92,82 @@ body span {
     
 }
 
-.div_1 .pontos h1{
+.div_1 .ponto h1{
     display: flex;
     justify-content: center;
     color:#B00505;
-    font-size: 20px;
+    font-size: 40px;
+    margin-top: 80px;
     
+}
+
+.div_2 .imgMax{
+    width: 91%;
+    height: 99%;
+   
+}
+
+.div_3 .max {
+    display: flex;
+    justify-content: center;
+    color:  white;
+    font-size: 37px;
+    font-weight: bold;
+    margin-top: 15px;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.divredbull{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+
+}
+
+#IdImgBandeira{
+    margin-top: 30px;
+    height: 100px;
+    object-fit: contain;
+}
+
+#IdNomeEquipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 40px;
+    font-size: 30px;
+}
+
+
+.divholanda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -35px;
+
+}
+
+
+.div_3 .divholanda .Holanda{
+    width: 100px;
+}
+
+
+
+.div_3 .divredbull .redbull{
+    
+    width: 140px;
+    
+}
+
+.div_3 .divnomered span {
+    display: flex;
+    justify-content: center;
+    color:  white;
+    font-size: 30px;
+    height: 30px;
+    margin-top: 20px;
 }

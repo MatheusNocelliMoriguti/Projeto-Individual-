@@ -3,7 +3,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-image: url("../assets/background/home3v2.jpg");
+    background-image: url("../assets/img/dois\ carros.png");
     background-repeat: no-repeat;
     background-size: cover;
     font-family: 'Barlow', sans-serif;
@@ -89,7 +89,9 @@ body {
     justify-content: center;
     align-items: center;
     flex: 1;
-    height: 75vh;
+    height: 70vh;
+   
+ 
     
 }
 
@@ -100,7 +102,7 @@ body {
 }
 
 .card {
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.845); 
     color: #fff;
     padding: 20px;
     border-radius: 10px;
@@ -175,7 +177,7 @@ body {
     color: #fff;
     display: flex;
     font-size: 15px;
-    margin-top: 30px;
+    margin-top: 48px;
     justify-content: center;
 }
 

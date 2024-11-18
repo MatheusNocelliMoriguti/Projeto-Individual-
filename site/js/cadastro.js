@@ -2,10 +2,9 @@
 
     var nomeValidado = false
     var emailValidado = false
-    var cnpjValidado = false
     var senhaValidado = false
     var confirmacaoValidado = false
-    var razaoValidado = false
+    
 
   function cadastrar(){
 
@@ -13,10 +12,9 @@
 
     var nome = document.getElementById("input_nome").value
     var email = document.getElementById("input_email").value
-    var cnpj = document.getElementById("input_cnpj").value
     var senha = document.getElementById("input_senha").value
     var confirmacao = document.getElementById("input_confirmacao_senha").value
-    var razao = document.getElementById("input_razao").value
+    
 
    // Validações para redirecionar
   
@@ -47,35 +45,9 @@
     }
     
     
-//validação do cnpj
-
-    if(cnpj.length == 18){
-        divvalidarCNPJ.innerHTML = `✅`
-        cnpjValidado = true
-
-    }  else {
-       divvalidarCNPJ.innerHTML = `⛔ Insira um CNPJ válido <br>
-       Exemplo:"00.000.000/0000-00"`
-       cnpjValidado = false
-    }
-
-    if(senha.includes(" ")){
-      divvalidarSenha.innerHTML = `Espaços não são permitidos` 
-    }
 
 
-    // validação razão 
-
-    if(razao.length > 0){
-
-      divvalidarRazao.innerHTML = `✅`
-      razaoValidado = true
-
-    } else {
-      divvalidarRazao.innerHTML = `⛔ Insira uma razão social válida`
-      razaoValidado = false
-
-    }
+    
 
 
 //variaveis pro if e for da senha

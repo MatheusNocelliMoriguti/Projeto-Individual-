@@ -4,11 +4,11 @@ function login() {
     var senha = document.getElementById("input_senha").value
 
 
-    if (email == "vznd.empresa@sptech.school" ) {
+    if (email == "formula1@gmail.com" ) {
             
-      if(senha == "VazaNada#2024") {
+      if(senha == "Formula1#2024") {
 
-        window.location.href = "../html/dashboard.html"; //redirecionamento para a tela de dash
+        window.location.href = "../html/quiz.html"; //redirecionamento para a tela de dash
       
       } else {
           divvalidarSenha.innerHTML = `⛔ Senha ou usuário incorreto(s)`
