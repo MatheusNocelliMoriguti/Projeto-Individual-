@@ -4,6 +4,7 @@
     var emailValidado = false
     var senhaValidado = false
     var confirmacaoValidado = false
+    var equipeValidado = false
     
 
   function cadastrar(){
@@ -14,11 +15,13 @@
     var email = document.getElementById("input_email").value
     var senha = document.getElementById("input_senha").value
     var confirmacao = document.getElementById("input_confirmacao_senha").value
+    var equipe = document.getElementById("input_equipe").value
     
 
    // Validações para redirecionar
   
-    if(nomeValidado == false || emailValidado == false || cnpjValidado == false || senhaValidado == false || confirmacaoValidado == false || razaoValidado == false){
+    if(nomeValidado == false || emailValidado == false ||  senhaValidado == false || confirmacaoValidado == false || equipeValidado == false){
+
 
 
   //validar nome
@@ -114,20 +117,37 @@ if(confirmacao.length >= 8) {
     confirmacaoValidado = false
     } 
 
-    if(nomeValidado && emailValidado && cnpjValidado && senhaValidado && confirmacaoValidado && razaoValidado){
+    if(nomeValidado && emailValidado &&  senhaValidado && confirmacaoValidado && equipeValidado){
         botao.innerHTML = `Logar`
 
         input_nome.readOnly = true
         input_email.readOnly = true
-        input_cnpj.readOnly = true
-        input_confirmacao_senha.readOnly = true
-        input_razao.readOnly = true
         input_senha.readOnly = true
+        input_confirmacao_senha.readOnly = true
+        input_equipe.readOnly = true
+       
     }
 
   } else {
     window.location.href = "./login.html"
   }
+
+
+   // validação equipe
+   if(equipe.includes('Mercedes') || equipe.includes('Mclaren') || equipe.includes('Ferrari') || equipe.includes('RedBull')){
+    divvalidarEquipe.innerHTML = `✅`;
+    equipeValidado = true
+
+} else {
+    divvalidarEquipe.innerHTML = `⛔ Insira uma Equipe válida `;
+    equipeValidadoValidado = false
+}
+
+if (nomeValidado && emailValidado && senhaValidado && confirmacaoValidado && equipeValidado) {
+  alert("Cadastro concluído com sucesso!");
+
+    
+}
 
 }
 

@@ -67,6 +67,7 @@ body {
     font-weight: 900;
     margin-left: 20px;
     text-decoration: none;
+   
 }
 
 .navbar a:hover {
@@ -227,18 +228,15 @@ body {
     outline: none;
 }
 
-#senha .olho {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    width: 15%;
+
+a{
     background-color: transparent;
+    border: solid 1px;
+     border-radius: 10px;
+     border-color: #ffff;
+     padding: 10px 15px;
+     margin-right: 20px;
+     
 }
 
-
-.olho img {
-    height: 20px;
-    width: auto;
-}
 
